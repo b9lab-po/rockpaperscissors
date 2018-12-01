@@ -1,0 +1,17 @@
+strict digraph {
+  makeMove [color=brown]
+  unHashMove
+  getPlayerIndex [color=yellow]
+  calculateScore [color=green]
+  incrementScore
+  LogNewScore
+  play
+  exitGame [color=purple]
+  LogExit
+  transfer
+  hashMove [color=green]
+  incrementScore -> LogNewScore
+  exitGame -> LogExit
+  exitGame -> transfer
+}
+
